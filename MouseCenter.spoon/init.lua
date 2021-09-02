@@ -3,7 +3,7 @@ obj.__index = obj
 
 -- Metadata
 obj.name = "MouseCenter"
-obj.version = "1.0.0"
+obj.version = "1.0.1"
 obj.author = "Zachary Cutlip"
 obj.homepage = ""
 obj.license = "MIT - https://opensource.org/licenses/MIT"
