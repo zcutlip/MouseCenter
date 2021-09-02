@@ -3,7 +3,7 @@ obj.__index = obj
 
 -- Metadata
 obj.name = "MouseCenter"
-obj.version = "1.0.1"
+obj.version = "1.0.2"
 obj.author = "Zachary Cutlip"
 obj.homepage = ""
 obj.license = "MIT - https://opensource.org/licenses/MIT"
@@ -13,7 +13,7 @@ obj.timer = nil
 obj.hotkey = nil
 obj.mcspoon = nil
 obj.log = hs.logger.new('mcenter','debug')
-if hs.spoons.isInstalled("MouceCircle") then
+if hs.spoons.isInstalled("MouseCircle") then
     obj.mcspoon = hs.loadSpoon("MouseCircle")
 else
     obj.log.i("MouseCircle spoon not installed")
