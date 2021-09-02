@@ -12,7 +12,9 @@ clean:
 $(ZIPDIR):
 	mkdir -p "$@"
 
-$(ZIPDIR)/%.zip: $(SRCDIR)/%
+$(ZIPDIR)/%.zip: $(SRCDIR)/% $(SRCDIR)/%/*.lua
+	echo $^
+	echo $@
 	rm -f $@
 	cd $(SRCDIR) ; $(ZIP) -9 -r $@ $(patsubst $(SRCDIR)/%, %, $<)
 
