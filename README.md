@@ -8,7 +8,7 @@ MouseCenter is Hammerspoon spoon that recenters your mouse pointer on the primar
 
           brew install hammerspoon
 
-2. Grab the zipped spoon from releases on the right.
+2. Grab the latest release of [MouseCenter](https://github.com/zcutlip/MouseCenter/releases/latest/download/MouseCenter.spoon.zip)
 3. Drop the unzipped spoon into `~/.hammerspoon/Spoons`
 4. Optionally install `MouseCircle` from the Hammerspoon spoons [repository](https://www.hammerspoon.org/Spoons/MouseCircle.html)
 5. Edit `~/.hammerspoon/init.lua` (create it if necessary) to include the following initialization:
