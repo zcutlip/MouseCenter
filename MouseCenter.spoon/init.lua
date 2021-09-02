@@ -11,7 +11,14 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 obj.circle = nil
 obj.timer = nil
 obj.hotkey = nil
-obj.mcspoon = hs.loadSpoon("MouseCircle")
+obj.mcspoon = nil
+obj.log = hs.logger.new('mcenter','debug')
+if hs.spoons.isInstalled("MouceCircle") then
+    obj.mcspoon = hs.loadSpoon("MouseCircle")
+else
+    obj.log.i("MouseCircle spoon not installed")
+end
+
 
 function obj:bindHotkeys(mapping)
     if (self.hotkey) then
